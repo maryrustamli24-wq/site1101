@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo/Brand name -->
+            <div class="nav-logo">
+                <a href="index.html">My Portfolio</a>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                </li>
+            </ul>
+            
+            <!-- Mobile menu toggle button -->
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <div class="container">
+                <!-- Page Title -->
+                <h1 class="page-title">My Projects</h1>
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <!-- Project Image -->
+                    <div class="project-image-container">
+                        <!-- Replace 'project1.jpg' with your actual project image filename -->
+                        <img src="images/project1.jpg" alt="Project 1 Screenshot" class="project-image">
+                    </div>
+                    
+                    <!-- Project Details -->
+                    <div class="project-content">
+                        <h2 class="project-title">Project 1: Personal Portfolio Website</h2>
+                        
+                        <div class="project-description">
+                            <p>
+                                This is my first personal portfolio website built with HTML, CSS, and JavaScript. 
+                                The website features a clean and modern design with responsive layout that works 
+                                seamlessly on desktop, tablet, and mobile devices.
+                            </p>
+                            <p>
+                                Key features include:
+                            </p>
+                            <ul class="project-features">
+                                <li>Responsive navigation bar with mobile menu</li>
+                                <li>Multiple pages showcasing my background and projects</li>
+                                <li>Smooth scrolling and interactive elements</li>
+                                <li>Social media integration</li>
+                                <li>Clean and accessible code structure</li>
+                            </ul>
+                            
+                            <p>
+                                This project demonstrates my understanding of fundamental web development 
+                                principles, including semantic HTML, CSS Flexbox/Grid, and JavaScript DOM manipulation.
+                            </p>
+                        </div>
+                        
+                        <!-- Project Links -->
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/site1101-project" 
+                               target="_blank" rel="noopener noreferrer" 
+                               class="btn btn-primary">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Space for additional projects in the future -->
+                <!-- You can add more project cards here following the same structure -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Social Media Icons -->
+            <div class="footer-social">
+                <!-- GitHub Icon Link -->
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                <!-- Codecademy Icon Link -->
+                <a href="https://www.codecademy.com/profiles/yourusername" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon" aria-label="Codecademy Profile">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+            
+            <!-- GitHub Repository Link -->
+            <div class="footer-repo">
+                <p>
+                    View this project on 
+                    <a href="https://github.com/yourusername/site1101-project" target="_blank" rel="noopener noreferrer" class="repo-link">
+                        GitHub <i class="fab fa-github"></i>
+                    </a>
+                </p>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+

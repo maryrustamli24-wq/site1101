@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome CDN for icons (GitHub, Codecademy, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo/Brand name -->
+            <div class="nav-logo">
+                <a href="index.html">My Portfolio</a>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+            </ul>
+            
+            <!-- Mobile menu toggle button -->
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section with Photo and Introduction -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <!-- Profile Photo -->
+                <div class="profile-photo-container">
+                    <!-- Replace 'your-photo.jpg' with your actual photo filename -->
+                    <img src="images/profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+                </div>
+                
+                <!-- Introduction Text -->
+                <div class="intro-content">
+                    <h1 class="intro-title">Welcome to My Portfolio</h1>
+                    <p class="intro-text">
+                        Hello! I'm a web developer passionate about creating beautiful and functional websites. 
+                        This portfolio showcases my journey, skills, and projects in web development.
+                    </p>
+                    <p class="intro-text">
+                        Feel free to explore my work and learn more about my background and qualifications.
+                    </p>
+                    
+                    <!-- Call-to-Action Buttons -->
+                    <div class="intro-buttons">
+                        <a href="about.html" class="btn btn-primary">Learn More About Me</a>
+                        <a href="projects.html" class="btn btn-secondary">View My Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Social Media Icons -->
+            <div class="footer-social">
+                <!-- GitHub Icon Link -->
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                <!-- Codecademy Icon Link -->
+                <a href="https://www.codecademy.com/profiles/yourusername" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon" aria-label="Codecademy Profile">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+            
+            <!-- GitHub Repository Link -->
+            <div class="footer-repo">
+                <p>
+                    View this project on 
+                    <a href="https://github.com/yourusername/site1101-project" target="_blank" rel="noopener noreferrer" class="repo-link">
+                        GitHub <i class="fab fa-github"></i>
+                    </a>
+                </p>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
