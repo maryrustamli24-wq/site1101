@@ -381,6 +381,26 @@ a {
     margin-top: 1.5rem;
 }
 
+.project-note {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #e8f4f8;
+    border-left: 4px solid #3498db;
+    border-radius: 5px;
+}
+
+.note-text {
+    color: #2c3e50;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.note-text i {
+    color: #3498db;
+}
+
 /* ============================================
    Footer Styles
    ============================================ */
