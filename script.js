@@ -132,6 +132,176 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('%c Welcome to My Portfolio! ', 'background: #3498db; color: #fff; font-size: 20px; padding: 10px;');
     console.log('This website was built with HTML, CSS, and JavaScript.');
     
+    /* ============================================
+       3D Rotating Tech Gadgets Background Animation
+       ============================================ */
+    
+    const techBackground = document.getElementById('tech-background');
+    if (!techBackground) return;
+    
+    // Number of gadgets (fewer on mobile for performance)
+    const gadgetCount = window.innerWidth < 768 ? 12 : 20;
+    
+    // Create 3D Cube
+    function createCube() {
+        const container = document.createElement('div');
+        container.className = 'tech-gadget';
+        
+        const cube = document.createElement('div');
+        cube.className = 'tech-cube';
+        
+        const faces = ['front', 'back', 'right', 'left', 'top', 'bottom'];
+        faces.forEach(face => {
+            const faceElement = document.createElement('div');
+            faceElement.className = 'cube-face ' + face;
+            cube.appendChild(faceElement);
+        });
+        
+        container.appendChild(cube);
+        return container;
+    }
+    
+    // Create 3D Gear
+    function createGear() {
+        const container = document.createElement('div');
+        container.className = 'tech-gadget';
+        
+        const gear = document.createElement('div');
+        gear.className = 'tech-gear';
+        
+        const outer = document.createElement('div');
+        outer.className = 'gear-outer';
+        
+        const center = document.createElement('div');
+        center.className = 'gear-center';
+        
+        // Create 8 gear teeth
+        for (let i = 0; i < 8; i++) {
+            const tooth = document.createElement('div');
+            tooth.className = 'gear-tooth';
+            const angle = (i * 45) * (Math.PI / 180);
+            const radius = 35;
+            tooth.style.left = (50 + (radius * Math.cos(angle)) - 6) + '%';
+            tooth.style.top = (50 + (radius * Math.sin(angle)) - 6) + '%';
+            outer.appendChild(tooth);
+        }
+        
+        outer.appendChild(center);
+        gear.appendChild(outer);
+        container.appendChild(gear);
+        
+        return container;
+    }
+    
+    // Create Chip/Rectangle
+    function createChip() {
+        const container = document.createElement('div');
+        container.className = 'tech-gadget';
+        
+        const chip = document.createElement('div');
+        chip.className = 'tech-chip';
+        
+        const body = document.createElement('div');
+        body.className = 'chip-body';
+        
+        // Create pins (4 on each side)
+        for (let i = 0; i < 4; i++) {
+            // Left side pins
+            const pinLeft = document.createElement('div');
+            pinLeft.className = 'chip-pin';
+            pinLeft.style.left = '-5px';
+            pinLeft.style.top = (10 + i * 10) + 'px';
+            body.appendChild(pinLeft);
+            
+            // Right side pins
+            const pinRight = document.createElement('div');
+            pinRight.className = 'chip-pin';
+            pinRight.style.right = '-5px';
+            pinRight.style.top = (10 + i * 10) + 'px';
+            body.appendChild(pinRight);
+        }
+        
+        chip.appendChild(body);
+        container.appendChild(chip);
+        
+        return container;
+    }
+    
+    // Create Hexagon
+    function createHexagon() {
+        const container = document.createElement('div');
+        container.className = 'tech-gadget';
+        
+        const hex = document.createElement('div');
+        hex.className = 'tech-hexagon';
+        
+        const shape = document.createElement('div');
+        shape.className = 'hex-shape';
+        
+        const center = document.createElement('div');
+        center.className = 'hex-center';
+        
+        hex.appendChild(shape);
+        hex.appendChild(center);
+        container.appendChild(hex);
+        
+        return container;
+    }
+    
+    // Function to position and animate a gadget
+    function setupGadget(gadget, type) {
+        // Random position
+        const x = Math.random() * 100;
+        const y = Math.random() * 100;
+        gadget.style.left = x + '%';
+        gadget.style.top = y + '%';
+        
+        // Random size (0.6x to 1.4x)
+        const scale = Math.random() * 0.8 + 0.6;
+        const currentTransform = gadget.style.transform || '';
+        
+        // Random animation durations
+        const rotationDuration = (Math.random() * 15 + 15) + 's'; // 15-30s
+        const floatDuration = (Math.random() * 20 + 25) + 's'; // 25-45s
+        const floatDelay = Math.random() * 5 + 's';
+        
+        // Apply floating animation
+        gadget.style.animation = `floatGadget ${floatDuration} infinite ease-in-out`;
+        gadget.style.animationDelay = floatDelay;
+        
+        // Apply rotation to inner elements
+        const rotatingElement = gadget.querySelector('.tech-cube, .tech-gear, .tech-chip, .tech-hexagon');
+        if (rotatingElement) {
+            rotatingElement.style.animationDuration = rotationDuration;
+            rotatingElement.style.animationDelay = Math.random() * 3 + 's';
+        }
+        
+        // Apply scale
+        if (currentTransform.includes('scale')) {
+            gadget.style.transform = currentTransform.replace(/scale\([^)]+\)/, `scale(${scale})`);
+        } else {
+            gadget.style.transform = `scale(${scale})`;
+        }
+        
+        return gadget;
+    }
+    
+    // Gadget type array
+    const gadgetTypes = [
+        { create: createCube, name: 'cube' },
+        { create: createGear, name: 'gear' },
+        { create: createChip, name: 'chip' },
+        { create: createHexagon, name: 'hexagon' }
+    ];
+    
+    // Generate gadgets
+    for (let i = 0; i < gadgetCount; i++) {
+        const randomType = gadgetTypes[Math.floor(Math.random() * gadgetTypes.length)];
+        const gadget = randomType.create();
+        setupGadget(gadget, randomType.name);
+        techBackground.appendChild(gadget);
+    }
+    
 });
 
 /* ============================================
