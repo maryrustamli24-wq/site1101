@@ -372,10 +372,10 @@ a {
     transition: color 0.3s ease;
     position: relative;
 }
-
+git
 .nav-link:hover,
 .nav-link.active {
-    color: #3498db;
+    color: #000000;
 }
 
 /* Active link indicator */
