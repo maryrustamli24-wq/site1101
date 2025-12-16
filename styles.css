@@ -702,22 +702,7 @@ git
 .note-text i {
     color: #3498db;
 }
-/* ============================================
-   Contact Styles
-   ============================================ */
-   .contact-page {
-    margin: 60px auto;
-    padding: 20px;
-  }
-  
-  .contact-page h1 {
-    margin-bottom: 15px;
-  }
-  
-  .contact-info {
-    margin-top: 20px;
-  }
-  
+
 /* ============================================
    Footer Styles
    ============================================ */
@@ -780,7 +765,7 @@ git
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
-    color: #bdc3c7;
+    color: #ffffff;
 }
 
 /* ============================================
