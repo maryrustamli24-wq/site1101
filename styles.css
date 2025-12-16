@@ -755,13 +755,13 @@ git
 }
 
 .repo-link {
-    color: #3498db;
+    color: #0d4a72;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .repo-link:hover {
-    color: #2980b9;
+    color: #000000;
 }
 
 .footer-copyright {
