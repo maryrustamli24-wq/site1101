@@ -42,6 +42,7 @@ Common elements:
 - Git & GitHub
 - GitHub Pages
 - Cursor / VSCode AI assistance
+-Website processed using Jekyll.
 
 ---
 
