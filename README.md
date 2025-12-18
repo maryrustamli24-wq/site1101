@@ -1,44 +1,91 @@
+# Personal Portfolio Website – Project 1
 
-# 🌐 Maryam Rustamli — Personal Website site 1101
+This repository contains my personal portfolio website developed for **Project 3**.  
+The goal of this project is to practice **HTML, CSS, JavaScript**, **Git/GitHub**, and **GitHub Pages hosting**, while using **AI-assisted development tools**.
 
-Welcome to my personal website repository! This project is a showcase of my background, skills, and portfolio, built with HTML, CSS, and JavaScript. It’s designed to be clean, responsive, and easy to navigate.
+---
 
-## 📁 File Structure
+## 🌐 Live Website
 
-- `index.html` — Homepage
-- `about.html` — Personal bio and background
-- `projects.html` — Portfolio of my work
-- `styles.css` — Styling and layout
-- `script.js` — Interactive features
-- `README.md` — Project overview
-- `assets/` — Images and other resources
+👉 **View the website here:**  
+https://maryrustamli24-wq.github.io/site1101/
 
-## 🚀 Getting Started
+---
 
-To run the website locally:
+## 📁 Repository
 
-```bash
-git clone https://github.com/maryrustamli24-wq/maryrustamli24-wq.github.io.git
-cd maryrustamli24-wq.github.io
-Then open index.html in your browser.
+👉 **GitHub Repository:**  
+https://github.com/maryrustamli24-wq/site1101
 
-✨ Features
-Responsive design for desktop and mobile
+---
 
-Smooth navigation between pages
+## 🧩 Website Structure
 
-Modular and easy to maintain
+The website consists of multiple pages:
 
-Clean and semantic HTML structure
+- **Home** – Introduction and profile photo
+- **About** – Background, skills, and activities
+- **Projects** – Project descriptions including Project 1
+- **Additional Page** – (Resume / Contact / Blog)
 
-📌 Future Plans
-Add contact form
+Common elements:
+- Navigation bar
+- Footer with external links
 
-Include blog section
+---
 
-Improve accessibility and SEO
+## 🛠️ Technologies Used
 
-📫 Contact
-Feel free to connect with me via LinkedIn or email for collaboration or feedback!
+- HTML5
+- CSS3 (responsive design)
+- JavaScript
+- Git & GitHub
+- GitHub Pages
+- Cursor / VSCode AI assistance
 
-Thanks for visiting 💫
+---
+
+## 📱 Responsive Design
+
+The website is fully responsive and adapts to:
+- Desktop screens
+- Tablets
+- Mobile devices
+
+---
+
+## 🔗 External Links
+
+- GitHub profile
+- Codecademy profile
+- Link to this repository (included on the website)
+
+---
+
+## 📌 Project Requirements Covered
+
+- ✔ Multiple pages (Home, About, Projects, etc.)
+- ✔ Navigation bar and footer
+- ✔ Project 1 with title, description, and image
+- ✔ Responsive layout
+- ✔ Public GitHub repository
+- ✔ GitHub Pages hosting
+- ✔ Multiple commits showing development progress
+
+---
+
+## 🤖 AI Usage
+
+AI tools (Cursor / VSCode AI) were used to:
+- Assist with HTML/CSS structure
+- Improve layout and responsiveness
+- Debug and refactor code
+
+The AI chat history is exported and submitted separately as required.
+
+---
+
+## 👩‍💻 Author
+
+**Maryam Rustamli**  
+Personal Portfolio Website – Project 3
