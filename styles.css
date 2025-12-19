@@ -372,7 +372,6 @@ a {
     transition: color 0.3s ease;
     position: relative;
 }
-git
 .nav-link:hover,
 .nav-link.active {
     color: #000000;
@@ -485,6 +484,44 @@ git
     margin-top: 2rem;
     flex-wrap: wrap;
 }
+
+.quick-facts-section {
+    padding: 4rem 0;
+}
+
+
+.quick-facts-content {
+    text-align: center;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 0 auto;
+}
+
+
+.quick-facts-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.quick-facts-list li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+
+.typing-text {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    color: #3498db;
+}
+
 
 /* ============================================
    Button Styles
@@ -833,6 +870,11 @@ git
     /* About page adjustments */
     .about-content {
         grid-template-columns: 1fr;
+    }
+
+    .quick-facts {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     /* Project card adjustments */
