@@ -493,7 +493,7 @@ a {
 .quick-facts-content {
     text-align: center;
     max-width: 800px;
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.61);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
