@@ -105,6 +105,34 @@ document.addEventListener('DOMContentLoaded', function() {
             mainContent.style.opacity = '1';
         }, 100);
     }
+   /* ============================================
+   Typing Effect (Loop)
+   ============================================ */
+
+const typingElement = document.getElementById("typing");
+
+if (typingElement) {
+    const text = "Always learning. Always building. 🚀";
+    let index = 0;
+
+    function typeEffect() {
+        if (index < text.length) {
+            typingElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeEffect, 80);
+        } else {
+            // Restart after pause
+            setTimeout(() => {
+                typingElement.textContent = "";
+                index = 0;
+                typeEffect();
+            }, 1500);
+        }
+    }
+
+    typeEffect();
+}
+
     
     /* ============================================
        Image Lazy Loading Enhancement
@@ -124,6 +152,47 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.opacity = '1';
         });
     });
+
+    /* ============================================
+   Scroll Reveal for Quick Facts
+   ============================================ */
+
+const factItems = document.querySelectorAll(".fact-item");
+
+if (factItems.length > 0) {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    factItems.forEach(item => observer.observe(item));
+}
+/* ============================================
+   Mouse Glow Effect (Quick Facts Card)
+   ============================================ */
+
+   const coolCard = document.querySelector(".cool-card");
+
+   if (coolCard) {
+       coolCard.addEventListener("mousemove", (e) => {
+           const rect = coolCard.getBoundingClientRect();
+           const x = e.clientX - rect.left;
+           const y = e.clientY - rect.top;
+   
+           coolCard.style.setProperty("--x", `${x}px`);
+           coolCard.style.setProperty("--y", `${y}px`);
+       });
+   
+       coolCard.addEventListener("mouseleave", () => {
+           coolCard.style.removeProperty("--x");
+           coolCard.style.removeProperty("--y");
+       });
+   }
+   
+
     
     /* ============================================
        Console Welcome Message (for development)
