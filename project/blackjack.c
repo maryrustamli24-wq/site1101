@@ -54,7 +54,6 @@ int main(void)
     print_card(first_card);
     total_points += card_points(first_card);
     printf("Your total: %d\n", total_points);
-
     while (total_points <= 21)
     {
         int choice = read_choice();
