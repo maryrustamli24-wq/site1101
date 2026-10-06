@@ -40,6 +40,11 @@ int read_choice()
     printf("Choice (1 or 2): ");
     scanf("%d", &choice);
     return choice;
+    while (choice != 1 && choice != 2 ){
+        printf("Please type 1 or 2.\n");
+        printf("Choice: ");
+        scanf("%d", &choice);
+    }
 }
 int main(void)
 {
