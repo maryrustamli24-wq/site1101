@@ -46,9 +46,9 @@ int read_choice()
         scanf("%d", &choice);
     }
 }
-int main(void)
+int player_turn()
 {
-    srand(time(NULL));
+    printf("PLAYER TURN\n");
     int total_points = 0;
     int first_card = draw_card();
     print_card(first_card);
@@ -73,9 +73,15 @@ int main(void)
 
         if (total_points > 21)
         {
-            printf("Bust! Your total is over 21.\nDealer wins.\n./");
+            printf("Bust! Your total is over 21.\nDealer wins.\n");
             break;
         }
     }
+    return total_points;
+}
+int main(void)
+{
+    srand(time(NULL));
+    int player_total = player_turn();
     return 0;
 }
