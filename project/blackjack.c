@@ -120,22 +120,24 @@ int main(void)
     int player_total = player_turn();
     if (player_total > 21)
     {
+        printf("Dealer wins.\n");
         return 0;
     }
     int dealer_total = dealer_turn();
         if (dealer_total > 21)
     {
+        printf("You win.\n");
         return 0;
     }
     printf("Player total: %d\n", player_total);
     printf("Dealer total: %d\n", dealer_total);
     if (dealer_total > player_total )
     {
-        printf("Dealer wins!\n");
+        printf("Dealer wins.\n");
     }
     else if (player_total > dealer_total )
     {
-        printf("Player wins!\n");
+        printf("Player wins.\n");
     }
     else  
     {
