@@ -1,0 +1,141 @@
+---
+title: Home
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding and viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome CDN for icons (GitHub, Codecademy, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 3D Rotating Tech Gadgets Background -->
+    <div class="tech-background" id="tech-background"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo/Brand name -->
+            <div class="nav-logo">
+                <a href="index.html">Maryam Rustamli</a>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <!-- Mobile menu toggle button -->
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section with Photo and Introduction -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <!-- Profile Photo -->
+                <div class="profile-photo-container">
+                    <!-- Replace 'your-photo.jpg' with your actual photo filename -->
+                    <img src="images/maryam_rustamli_image.jpg" alt="Profile Photo" class="profile-photo">
+                </div>
+                
+                <!-- Introduction Text -->
+                <div class="intro-content">
+                    <h1 class="intro-title">Welcome to My Portfolio</h1>
+                    <p class="intro-text">
+                        Hello! I'm Maryam, a curious and motivated learner who enjoys exploring new skills and turning ideas into <strong>real projects.</strong> 
+                        <br>Whether I’m studying, working on a project, or learning something new, I always try to improve a little every day.
+                        I’m continuously expanding my skills in areas like Python, web development, machine learning basics, and automation, and I enjoy solving problems with a calm and practical approach. 
+                        <br> <strong>Clarity, honesty, and continuous learning</strong> are the principles that guide me in everything I do.
+                        My personal goal is simple: keep learning, keep creating, and stay open to new opportunities. 
+                        If you’d like to connect or collaborate, feel free to reach out! <br> <strong>Reach out to me on social media or through my email.</strong> <br>
+                    </p>
+                    
+                   
+                </div>
+            </div>
+        </section>
+         <!-- Quick Facts Section --> 
+         <section class="quick-facts-section">
+            <div class="hero-container">
+                <div class="quick-facts-content">
+                    <h2 class="intro-title">Quick Facts About Me</h2>
+                    <ul class="quick-facts-list">
+                        <li>💻 Interested in Python & Web Development</li>
+                        <li>📊 Enjoy turning ideas into structured projects</li>
+                        <li>📚 Believe in learning something new every day</li>
+                        <li>🤝 Open to collaboration and new opportunities</li>
+                    </ul>
+                    <p class="typing-text">
+                        <span id="typing"></span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Social Media Icons -->
+            <div class="footer-social">
+                <!-- GitHub Icon Link -->
+                <a href="https://github.com/maryrustamli24-wq" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                <!-- Codecademy Icon Link -->
+                <a href="https://www.codecademy.com/profiles/mary_rust" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon" aria-label="Codecademy Profile">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+            
+            <!-- GitHub Repository Link -->
+            <div class="footer-repo">
+                <p>
+                    View this project on 
+                    <a href="https://github.com/maryrustamli24-wq/site1101" target="_blank" rel="noopener noreferrer" class="repo-link">
+                        GitHub <i class="fab fa-github"></i>
+                    </a>
+                </p>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+

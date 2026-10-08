@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Maryam Rustamli Portfolio</title>
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo/Brand name -->
+            <div class="nav-logo">
+                <a href="index.html">Maryam Rustamli</a>
+            </div>
+
+            
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <!-- Mobile menu toggle button -->
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <div class="container">
+                <!-- Page Title -->
+                <h1 class="page-title">My Projects</h1>
+                
+                <!-- Project 1: How Does Hardware Work? -->
+                <div class="project-card">
+                    <!-- Project Image -->
+                    <div class="project-image-container">
+                        <!-- Suggestion: replace with an actual photo of the breadboard circuit -->
+                        <img src="images/Project1_Hardware.png" alt="How Does Hardware Work? Breadboard Logic Gates" class="project-image">
+                    </div>
+                    
+                    <!-- Project Details -->
+                    <div class="project-content">
+                        <h2 class="project-title">How Does Hardware Work?</h2>
+                        
+                        <div class="project-description">
+                            <p>
+                                In this project, we explored how digital logic works at the hardware level by building OR and NAND gates on a breadboard.
+                                Using transistors, resistors, wires, LEDs, and buttons, we created working circuits that respond to different input combinations.
+                                By testing each configuration, we saw how simple electronic components can be combined to implement logical operations used inside real computers.
+                            </p>
+                            
+                            <p>
+                                <strong>Components Used:</strong>
+                            </p>
+                            <ul class="project-features">
+                                <li>Breadboard and jumper wires</li>
+                                <li>Transistors and resistors</li>
+                                <li>LEDs and push buttons</li>
+                                <li>Power supply (battery or adapter)</li>
+                            </ul>
+                            
+                            <p>
+                                This project helped us understand the connection between abstract logic gates and physical hardware.
+                                We learned how voltage levels represent binary states, how circuits are debugged with LEDs as indicators,
+                                and how hardware fundamentals form the basis for more advanced computer architecture.
+                            </p>
+                        </div>
+                        
+                        <!-- Optional YouTube Link -->
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=QctsqYZTqME" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                 YouTube Link
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Hour of Code (AI) -->
+                <div class="project-card">
+                    <!-- Project Image -->
+                    <div class="project-image-container">
+                        <!-- Suggestion: replace with a photo from the school event -->
+                        <img src="images/hour-of-code-ai.jpeg" alt="Hour of Code (AI) workshop at School 318" class="project-image">
+                    </div>
+                    
+                    <!-- Project Details -->
+                    <div class="project-content">
+                        <h2 class="project-title">Hour of Code (AI)</h2>
+                        
+                        <div class="project-description">
+                            <p>
+                                We organized an Hour of Code (AI) event at secondary school No. 318, located in Garachukhur settlement, Surakhani district, Baku city to introduce children to the world of programming.
+                                During the workshop, we explained basic algorithms, practiced simple Python operations, and showed how computers follow step-by-step instructions.
+                                The goal was to make coding fun, accessible, and inspiring for students who were experiencing programming for the first time.
+                            </p>
+                            
+                            <p>
+                                <strong>Activities and Technologies:</strong>
+                            </p>
+                            <ul class="project-features">
+                                <li>Teaching basic algorithms and logical thinking</li>
+                                <li>Hands-on practice with simple Python operations</li>
+                                <li>Playing Microsoft MakeCode Bug Arena to explore coding through games</li>
+                                <li>Presenting participation certificates to students</li>
+                            </ul>
+                            
+                            <p>
+                                Through this project, we learned how to communicate technical concepts to younger students
+                                and how to design an engaging learning experience that mixes theory, practice, and play.
+                                It strengthened our teaching, communication, and leadership skills while promoting digital literacy in the community.
+                            </p>
+                        </div>
+                        
+                        <!-- Optional YouTube Link -->
+                        <div class="project-links">
+                            <a href="https://youtu.be/Nmam1jtil6I" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                YouTube Link
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: C++ Hotel Booking System (Existing Project) -->
+                <div class="project-card">
+                    <!-- Project Image -->
+                    <div class="project-image-container">
+                        <img src="images/c++_project.png" alt="C++ Hotel Booking System Screenshot" class="project-image">
+                    </div>
+                    
+                    <!-- Project Details -->
+                    <div class="project-content">
+                        <h2 class="project-title">C++ Hotel Booking System</h2>
+                        
+                        <div class="project-description">
+                            <p>
+                                I developed a fully interactive hotel booking system in C++ that allows users to search,
+                                select, and book hotels while automatically calculating the final bill based on stay duration,
+                                room type, number of guests, and hotel prices.
+                            </p>
+                            
+                            <p>
+                                <strong>Key Features and Components:</strong>
+                            </p>
+                            <ul class="project-features">
+                                <li>User and admin login system</li>
+                                <li>Date selection and calculation of total days and nights</li>
+                                <li>Multiple hotel categories (Business, Resort, Boutique)</li>
+                                <li>Room selection logic based on number of guests</li>
+                                <li>Automatic bill calculation and sorting hotels by price</li>
+                                <li>Admin panel for adding, deleting, searching, and updating hotel data</li>
+                                <li>Colorful console UI with ASCII-art logo and input validation</li>
+                            </ul>
+                            
+                            <p>
+                                <strong>Technologies Used:</strong>
+                            </p>
+                            <ul class="project-features">
+                                <li>C++</li>
+                                <li>Windows.h for console UI</li>
+                                <li>Functions, arrays, and procedural logic</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Project Note -->
+                        <div class="project-note">
+                            <p class="note-text">
+                                <i class="fas fa-info-circle"></i> 
+                                This is a local C++ project developed for academic purposes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4: McDonald's Azerbaijan Website – HTML/CSS Clone (Existing Project) -->
+                <div class="project-card">
+                    <!-- Project Image -->
+                    <div class="project-image-container">
+                        <img src="images/mc_website.png" alt="McDonald's Azerbaijan Website Clone Screenshot" class="project-image">
+                    </div>
+                    
+                    <!-- Project Details -->
+                    <div class="project-content">
+                        <h2 class="project-title">McDonald's Azerbaijan Website – HTML/CSS Clone</h2>
+                        
+                        <div class="project-description">
+                            <p>
+                                This is a static website inspired by the McDonald's Azerbaijan website.
+                                The project was built using only HTML and CSS, without JavaScript and without
+                                using AI tools during development, to focus purely on front-end fundamentals.
+                            </p>
+                            
+                            <p>
+                                <strong>Technologies Used:</strong>
+                            </p>
+                            <ul class="project-features">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>
+                            
+                            <p>
+                                This project demonstrates my ability to analyze existing web designs, implement
+                                responsive layouts, and create pixel-accurate recreations using semantic HTML and modern CSS.
+                                It showcases my understanding of layout techniques such as Flexbox and Grid, as well as visual styling.
+                            </p>
+                        </div>
+                        
+                        <!-- Project Note -->
+                        <div class="project-note">
+                            <p class="note-text">
+                                <i class="fas fa-info-circle"></i> 
+                                This is a personal learning project and is not affiliated with or endorsed by McDonald's Corporation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Social Media Icons -->
+            <div class="footer-social">
+                <!-- GitHub Icon Link -->
+                <a href="https://github.com/maryrustamli24-wq" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                <!-- Codecademy Icon Link -->
+                <a href="https://www.codecademy.com/profiles/mary_rust" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon" aria-label="Codecademy Profile">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+            
+            <!-- GitHub Repository Link -->
+            <div class="footer-repo">
+                <p>
+                    View this project on 
+                    <a href="https://github.com/maryrustamli24-wq/site1101" target="_blank" rel="noopener noreferrer" class="repo-link">
+                        GitHub <i class="fab fa-github"></i>
+                    </a>
+                </p>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
