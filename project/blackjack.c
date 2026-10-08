@@ -115,40 +115,36 @@ int dealer_turn()
 
 }
 int play_game(void) {
-    int loses=0;
-    int wins=0;
-    int draws=0;
     int player_total = player_turn();
     if (player_total > 21)
     {
         printf("Dealer wins.\n");
-        loses++;
-        return 0;
+        return -1;
     }
     int dealer_total = dealer_turn();
         if (dealer_total > 21)
     {
         printf("You win.\n");
-        wins++;
-        return 0;
+        return 1;
     }
     printf("Player total: %d\n", player_total);
     printf("Dealer total: %d\n", dealer_total);
     if (dealer_total > player_total )
     {
         printf("Dealer wins.\n");
-        loses++;
+        return -1;
     }
     else if (player_total > dealer_total )
     {
         printf("Player wins.\n");
-        wins++;
+        
     }
     else  
     {
         printf("It's a tie!\n");
-        draws++;    
+          
     }
+    printf("Wins: %d, losses: %d, draws: %d\n", wins, loses, draws);
     return 0;
 }
 int main(void)
