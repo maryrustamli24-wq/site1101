@@ -129,15 +129,15 @@ int main(void)
     }
     printf("Player total: %d\n", player_total);
     printf("Dealer total: %d\n", dealer_total);
-    if (dealer_total > player_total && dealer_total < 21)
+    if (dealer_total > player_total )
     {
         printf("Dealer wins!\n");
     }
-    else if (player_total > dealer_total && player_total <= 21)
+    else if (player_total > dealer_total )
     {
         printf("Player wins!\n");
     }
-    else if (player_total == dealer_total && player_total <= 21)
+    else  
     {
         printf("It's a tie!\n");
     }
